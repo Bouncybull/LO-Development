@@ -74,9 +74,10 @@ section:nth-child(2)
 {
     background-color: lightgrey;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     height: 500vh;
     width: 100%;
+    flex-direction: column;
 }
 
 .item1
@@ -92,12 +93,19 @@ section:nth-child(2)
 
 .item2
 {
-    height: 54%;
-    width: 100vw;
+    height: 125vh;
+    width: 76%;
     background-color: white;
     margin-top: 3%;
     margin-left: 12%;
     margin-right: 12%;
+    display: flex;
+}
+
+.item2 div:nth-child(1)
+{
+    width: 100%;
+    height: auto;
 }
 
 .play
@@ -113,3 +121,44 @@ section:nth-child(2)
     height: 10vh;
     width: 10vh;
 }
+
+.container
+{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    height: auto;
+    width: 100%;
+}
+
+.container div:nth-child(1)
+{
+    grid-area: 1/ 1/ span 1/ span 2; 
+    background-color: red;
+}
+
+.container div:nth-child(2)
+{
+    grid-area: 2/ 1/ span 1/ span 1; 
+    background-color: blue;
+}
+
+.container div:nth-child(3)
+{
+    grid-area: 2/ 2/ span 1/ span 1; 
+    background-color: black;
+}
+
+.container div:nth-child(4)
+{
+    grid-area: 3/ 1/ span 1/ span 2; 
+    background-color: red;
+}
+
+.item3
+{
+    margin-top: 8%;
+    height: 35vh;
+    width: 76%;
+    background-color: white;
+}
+
