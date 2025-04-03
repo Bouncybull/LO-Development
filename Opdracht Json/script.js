@@ -1,3 +1,5 @@
+
+
 async function getData() {
     const url = "generated.json";
     try {
@@ -14,4 +16,10 @@ async function getData() {
   }
 
 getData();
+
+function myFunction(item) {
+  console.log(item)
+  let P = document.createElement('p');
+  P.innerHTML = item.tags;
   
+}
